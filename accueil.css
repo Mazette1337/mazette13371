@@ -1,0 +1,172 @@
+
+
+
+body {
+    display: flex;
+    margin: 0px;
+}
+
+IMG.couverture {
+height: 255px;
+margin-bottom: 30px;
+}
+
+IMG.couverture2 {
+    height: 255px;
+    margin-bottom: 30px;
+    }
+    
+
+.titre{
+	font-size:64px!important;
+    margin-top: 25px;
+}
+
+.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:0px;margin-bottom:16px}
+
+.w3-bar-block .w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
+.w3-center .w3-bar{display:inline-block;width:auto}
+.pagedroite
+{
+	text-align: center;
+width: 60vw;
+
+}
+
+
+	.conteneur {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		width: 85%;
+	}
+
+
+
+	.bouton {
+		-webkit-box-shadow: 0px 10px 13px -7px #000000, 25px -7px 13px -1px rgba(0,0,0,0.11); 
+		border-width: 6px;
+border-style: solid;
+border-color: #1C6EA4;
+border-radius: 40px 9px 40px 9px;
+				box-shadow: 0px 10px 13px -7px #000000, 25px -7px 13px -1px rgba(0,0,0,0.11);
+				width: fit-content;
+		}
+
+
+		/* Bouton */
+
+		@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.wrapper {
+  display: inline-block;
+  margin-left: 50px;
+  float:left;
+}
+.wrapper2 {
+    display: inline-block;
+    margin-left: 50px;
+float: right ;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+    background: #d8a776;
+    transition: 1s;
+    box-shadow: 4px 4px 0 rgb(97, 97, 97);
+    transform: skewX(-20deg);
+}
+
+/*couleur background cta : #9da7dde7;  #b0bcffd7  #ebad5c;  #d8a776; */
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.3s;
+    box-shadow: 10px 10px 0   #f5b45ec0;
+	 
+}
+
+
+
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg) 
+  }
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #FBC638;
+    }
+    100% {
+        fill: white;
+    }
+}

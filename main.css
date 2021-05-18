@@ -1,0 +1,301 @@
+body {
+	line-height: 2;
+}
+
+IMG.displayed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    width: 35vw ;
+	}
+
+.conteneur {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	min-height: fit-content;
+	height: max-content;
+	width: 30%;
+	text-align: center;
+	border: solid;
+	box-shadow: 3px -2px 5px #F0F0F0;
+	border-style: outset;
+	border-width: thin;
+	font-size: 100%;
+}
+
+
+@page {
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+@media (max-width: 1200px) {
+	body {
+		margin: 0%;
+	}
+	.conteneur {
+		width: 90vw;
+		font-size: 3vw;
+	}
+
+	#toc {
+		
+		width: 90vw;
+		background-color: rgb(226, 0, 30);
+	}
+	a {
+		text-decoration: underline;
+	}
+	a:link {
+		text-decoration: underline;
+		text-align: center;
+		margin-top: 10%;
+		margin-bottom: 42px
+	}
+	a:visited {
+		text-decoration: underline;
+	}
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: "Montserrat", sans-serif;
+}
+
+
+/* p { text-indent: 1em;margin-top: 6px;margin-bottom:6px;display:block;line-height:120%;}
+*/
+
+p {
+	text-indent: 1em;
+	margin-top: 6px;
+	margin-bottom: 60px;
+	line-height: 150%;
+	;
+	font-family: Garamond;
+	font-size: 120%;
+	text-align: left;
+	margin-left: 5%;
+	margin-right: auto;
+	position: center;
+	font-family: "Montserrat", sans-serif;
+}
+
+#toc {
+	margin-top: 2%;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 1%;
+	line-height: 2, 5;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	height: fit-content;
+	width: 30vw;
+	text-align: center;
+	border: solid;
+	box-shadow: 3px -2px 5px #F0F0F0;
+	border-style: outset;
+	border-width: thin;
+}
+
+.toc_list {
+	text-align: left;
+	margin-left: auto;
+	font-family: "Montserrat", sans-serif;
+	font-variant: normal;
+	font-size: 1, 5vmin;
+}
+
+.toc_title {
+	font-weight: 700;
+	font-size: 2vw;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+}
+
+#toc li,
+#toc ul,
+#toc ul li {
+	list-style: outside none none !important;
+}
+
+a:link {
+	text-decoration: none;
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom: 42px
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+a:hover,
+a:active {
+	font-size: 110%;
+}
+
+.preface {
+	text-align: left;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lawngreen;
+	line-height: 2;
+}
+
+.titre {
+	font-size: 200%;
+	margin-top: 10%;
+	margin-bottom: 8%;
+	line-height: 200%;
+	letter-spacing: 0.1em;
+}
+
+
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 8px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom: 42px;
+}
+
+h3 {
+	font-size: 1.66667em;
+	color: #000000;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 32px
+}
+
+h4 {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 18px;
+	text-align: left;
+}
+
+
+/* Texte en petites majuscules */
+
+.sc,
+.sct,
+.romain,
+.personnage {
+	font-variant: small-caps;
+}
+
+.stc {
+	letter-spacing: .1em;
+	word-spacing: .1em;
+}
+
+
+/* Pour les chiffres romains */
+
+.romain {
+	text-transform: lowercase;
+}
+
+
+/* Texte avec une majuscule à la première lettre de chaque mot */
+
+.personnage {
+	text-transform: lowercase;
+	text-transform: capitalize;
+	font-weight: bold;
+	color: #04040C;
+}
+
+.lignecapitale:first-line {
+	font-variant: small-caps;
+	font-size: 120%;
+	text-align: justify;
+}
+
+.w3-sidebar {
+	height: 100%;
+	width: 200px;
+	background-color: #fff;
+	position: fixed!important;
+	z-index: 1;
+	overflow: auto
+}
+
+.myButton {
+	color: rgb(206, 206, 206);
+	font-size: 16px;
+	line-height: 16px;
+	padding: 8px;
+	border-radius: 19px;
+	font-family: Georgia, serif;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+	box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 12px 1px;
+	border: 2px solid rgb(28, 110, 164);
+	display: inline-block;
+}
+
+.myButton:hover {
+	background: hsl(204, 14%, 85%);
+}
+
+.myButton:active {
+	background: rgb(179, 188, 194);
+}
+
+
+/* LIEN TOC */
+
+body {
+	font-family: 'Roboto Slab', serif;
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	font-size: 5vw;
+	font-weight: 100;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+span {
+	font-weight: 100;
+	transition: all .5s;
+	border-bottom: 1px solid;
+}
