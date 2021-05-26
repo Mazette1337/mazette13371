@@ -1,8 +1,9 @@
 body {
 	line-height: 2;
+	font-family: Montserrat, sans-serif;
 }
 
-IMG.displayed {
+.displayed {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -10,89 +11,69 @@ IMG.displayed {
 	}
 
 .conteneur {
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50px;
-	min-height: fit-content;
 	height: max-content;
-	width: 30%;
-	text-align: center;
 	border: solid;
 	box-shadow: 3px -2px 5px #F0F0F0;
 	border-style: outset;
 	border-width: thin;
 	font-size: 100%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	min-height: fit-content;
+	text-align: center;
+	width: 30%;
+
 }
 
+@font-face {
+	font-family: Monserrat, sans-serif;
+	src: url(Montserrat-Regular.ttf);
+}
 
 @page {
-	margin-top: 0.8em;
 	margin-bottom: 0.8em;
+	margin-top: 0.8em;
 }
 
 @media (max-width: 1200px) {
 	body {
-		margin: 0%;
+		margin: 0;
 	}
 	.conteneur {
-		width: 90vw;
 		font-size: 3vw;
+		width: 90vw;
 	}
 
 	#toc {
-		
 		width: 90vw;
-		background-color: rgb(226, 0, 30);
 	}
 	a {
 		text-decoration: underline;
 	}
 	a:link {
-		text-decoration: underline;
-		text-align: center;
 		margin-top: 10%;
-		margin-bottom: 42px
+		margin-bottom: 42px;
+		text-align: center;
+		text-decoration: underline;
 	}
 	a:visited {
 		text-decoration: underline;
 	}
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	font-family: "Montserrat", sans-serif;
-}
-
-
-/* p { text-indent: 1em;margin-top: 6px;margin-bottom:6px;display:block;line-height:120%;}
-*/
-
 p {
 	text-indent: 1em;
-	margin-top: 6px;
-	margin-bottom: 60px;
+	margin: 6px auto 60px 20% ;
 	line-height: 150%;
-	;
-	font-family: Garamond;
-	font-size: 120%;
 	text-align: left;
-	margin-left: 5%;
-	margin-right: auto;
 	position: center;
-	font-family: "Montserrat", sans-serif;
 }
 
 #toc {
 	margin-top: 2%;
-	font-family: "Montserrat", sans-serif;
-	margin-bottom: 1%;
+		margin-bottom: 1%;
 	line-height: 2, 5;
 	margin-left: auto;
 	margin-right: auto;
@@ -109,7 +90,6 @@ p {
 .toc_list {
 	text-align: left;
 	margin-left: auto;
-	font-family: "Montserrat", sans-serif;
 	font-variant: normal;
 	font-size: 1, 5vmin;
 }
@@ -118,7 +98,6 @@ p {
 	font-weight: 700;
 	font-size: 2vw;
 	text-align: center;
-	font-family: "Montserrat", sans-serif;
 }
 
 #toc li,
@@ -126,6 +105,13 @@ p {
 #toc ul li {
 	list-style: outside none none !important;
 }
+
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
 
 a:link {
 	text-decoration: none;
@@ -151,14 +137,7 @@ a:active {
 	font-size: 110%;
 }
 
-.preface {
-	text-align: left;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: lawngreen;
-	line-height: 2;
-}
+
 
 .titre {
 	font-size: 200%;
@@ -183,7 +162,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.66667em;
+	font-size: 1.66em;
 	color: #000000;
 	text-align: center;
 	line-height: 1;
@@ -195,55 +174,9 @@ h4 {
 	margin-left: auto;
 	margin-top: 10px;
 	margin-bottom: 18px;
-	text-align: left;
+	text-align: center;
 }
 
-
-/* Texte en petites majuscules */
-
-.sc,
-.sct,
-.romain,
-.personnage {
-	font-variant: small-caps;
-}
-
-.stc {
-	letter-spacing: .1em;
-	word-spacing: .1em;
-}
-
-
-/* Pour les chiffres romains */
-
-.romain {
-	text-transform: lowercase;
-}
-
-
-/* Texte avec une majuscule à la première lettre de chaque mot */
-
-.personnage {
-	text-transform: lowercase;
-	text-transform: capitalize;
-	font-weight: bold;
-	color: #04040C;
-}
-
-.lignecapitale:first-line {
-	font-variant: small-caps;
-	font-size: 120%;
-	text-align: justify;
-}
-
-.w3-sidebar {
-	height: 100%;
-	width: 200px;
-	background-color: #fff;
-	position: fixed!important;
-	z-index: 1;
-	overflow: auto
-}
 
 .myButton {
 	color: rgb(206, 206, 206);
@@ -272,30 +205,3 @@ h4 {
 }
 
 
-/* LIEN TOC */
-
-body {
-	font-family: 'Roboto Slab', serif;
-	margin: 0;
-}
-
-.wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
-	height: 100vh;
-	font-size: 5vw;
-	font-weight: 100;
-}
-
-a {
-	color: #000;
-	text-decoration: none;
-}
-
-span {
-	font-weight: 100;
-	transition: all .5s;
-	border-bottom: 1px solid;
-}

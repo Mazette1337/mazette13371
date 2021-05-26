@@ -2,30 +2,36 @@
 
 
 body {
-    display: flex;
-    margin: 0px;
+    margin: 0;
 }
 
-IMG.couverture {
-height: 255px;
+.couverture {
+height: 25vh;
+width: 10vw;
 margin-bottom: 30px;
 }
 
-IMG.couverture2 {
-    height: 255px;
+.couvertureflip {
+    height: 25vh;
+    width: 16vw;
     margin-bottom: 30px;
     }
+
+.couvfooter {
+height: 10px;
+width: auto;
+}
     
+.bouttons {
+    height: 20vh;
+    width: 50vw;
+}
 
 .titre{
 	font-size:64px!important;
     margin-top: 25px;
 }
 
-.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:0px;margin-bottom:16px}
-
-.w3-bar-block .w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
-.w3-center .w3-bar{display:inline-block;width:auto}
 .pagedroite
 {
 	text-align: center;
@@ -69,16 +75,23 @@ body {
   align-items: center;
 }
 
-
+footer {
+    text-align: left;
+    padding-top:400px;
+    width: 50vw;
+font-size: smaller;
+}
 
 .wrapper {
-  display: inline-block;
   margin-left: 50px;
   float:left;
 }
 .wrapper2 {
-    display: inline-block;
     margin-left: 50px;
+float: right ;
+}
+
+.wrapper3 {
 float: right ;
 }
 
@@ -87,15 +100,13 @@ float: right ;
     padding: 10px 45px;
     text-decoration: none;
     font-family: 'Monserrat', sans-serif;
-    font-size: 30px;
+    font-size: 1vw;
     color: white;
     background: #d8a776;
     transition: 1s;
     box-shadow: 4px 4px 0 rgb(97, 97, 97);
     transform: skewX(-20deg);
 }
-
-/*couleur background cta : #9da7dde7;  #b0bcffd7  #ebad5c;  #d8a776; */
 
 .cta:focus {
    outline: none; 
@@ -170,3 +181,153 @@ path.two {
         fill: white;
     }
 }
+
+/* bouton télécharger */
+
+@media (max-width: 1200px) {
+.couverture {
+width: 10vw;
+height: 10vh;
+
+}
+.couvertureflip {
+    width: 10vw;
+    height: 10vh;
+    }
+.wrapper{
+width: fit-content;
+height: fit-content;
+
+}
+
+}
+
+.dl {
+    display: inline-block;
+padding-right: 1vw;
+padding-left: 2vw;
+text-align: justify;}
+
+.portfolio-experiment, .scene {
+    height: fit-content;
+    width: fit-content;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-display: flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+  }
+  
+  .portfolio-experiment {
+    background: #f5b45ec0;
+  }
+  .portfolio-experiment a {
+    color: white;
+    padding: 0.7em calc(0.7em * 1.2);
+    display: inline-block;
+    border: 3px solid transparent;
+    position: relative;
+    font-size: 1.5em;
+    cursor: pointer;
+    letter-spacing: 0.07em;
+  }
+  .portfolio-experiment a .text {
+    font-family: Monserrat;
+    transform: translate3d(0, 0.7em, 0);
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  }
+  .portfolio-experiment a:after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: calc(0.7em * 1.2);
+    right: calc(0.7em * 1.2);
+    height: 3px;
+    background: #000000;
+    transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+    transform-origin: left;
+  }
+  .portfolio-experiment .line {
+    position: absolute;
+    background: #000000;
+  }
+  .portfolio-experiment .line.-right, .portfolio-experiment .line.-left {
+    width: 3px;
+    bottom: -3px;
+    top: -3px;
+    transform: scale3d(1, 0, 1);
+  }
+  .portfolio-experiment .line.-top, .portfolio-experiment .line.-bottom {
+    height: 3px;
+    left: -3px;
+    right: -3px;
+    transform: scale3d(0, 1, 1);
+  }
+  .portfolio-experiment .line.-right {
+    right: -3px;
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+    transform-origin: top;
+  }
+  .portfolio-experiment .line.-top {
+    top: -3px;
+    transition: transform 0.08s linear 0.43s;
+    transform-origin: left;
+  }
+  .portfolio-experiment .line.-left {
+    left: -3px;
+    transition: transform 0.08s linear 0.51s;
+    transform-origin: bottom;
+  }
+  .portfolio-experiment .line.-bottom {
+    bottom: -3px;
+    transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+    transform-origin: right;
+  }
+  .portfolio-experiment a:hover .text,
+  .portfolio-experiment a:active .text {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  }
+  .portfolio-experiment a:hover:after,
+  .portfolio-experiment a:active:after {
+    transform: scale3d(0, 1, 1);
+    right: -3px;
+    left: -3px;
+    transform-origin: right;
+    transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+  }
+  .portfolio-experiment a:hover .line,
+  .portfolio-experiment a:active .line {
+    transform: scale3d(1, 1, 1);
+  }
+  .portfolio-experiment a:hover .line.-right,
+  .portfolio-experiment a:active .line.-right {
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+    transform-origin: bottom;
+  }
+  .portfolio-experiment a:hover .line.-top,
+  .portfolio-experiment a:active .line.-top {
+    transition: transform 0.08s linear 0.4s;
+    transform-origin: right;
+  }
+  .portfolio-experiment a:hover .line.-left,
+  .portfolio-experiment a:active .line.-left {
+    transition: transform 0.08s linear 0.48s;
+    transform-origin: top;
+  }
+  .portfolio-experiment a:hover .line.-bottom,
+  .portfolio-experiment a:active .line.-bottom {
+    transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+    transform-origin: left;
+  }
