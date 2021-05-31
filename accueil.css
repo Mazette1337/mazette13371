@@ -14,16 +14,16 @@ margin-bottom: 10px;
 .couvertureflip {
     height: 25vh;
     width: 16vw;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     }
 
 .couvfooter {
-height: 10px;
+height: auto;
 width: auto;
 }
     
 .bouttons {
-    height: 20vh;
+    height: auto;
     width: 50vw;
 }
 
@@ -63,7 +63,6 @@ border-radius: 40px 9px 40px 9px;
 
 		/* Bouton */
 
-		@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
 
 * {
   box-sizing: border-box;
@@ -80,21 +79,22 @@ footer {
     text-align: left;
     position: absolute;
     bottom: 0;
-       width: 50vw;
+       width: auto;
 font-size: smaller;
 }
 
 .wrapper {
-  margin-left: 50px;
+  margin-left: 40px;
   float:left;
 }
 .wrapper2 {
-    margin-left: 50px;
+    margin-left: 30px;
 float: right ;
 }
 
 .wrapper3 {
 float: right ;
+padding-top: 2vh;
 }
 
 .cta {
@@ -192,14 +192,35 @@ width: 10vw;
 height: 10vh;
 
 }
+
+.bouttons {
+height: auto;
+width: auto;
+
+}
+
+
 .couvertureflip {
     width: 10vw;
     height: 10vh;
     }
+
+ .pagedroite {
+width: 65vw;
+height: fit-content;
+
+ }   
 .wrapper{
 width: fit-content;
 height: fit-content;
 }
+
+.wrapper2{
+  width: fit-content;
+  height: fit-content;
+  float:left ;
+  }
+
 .wrapper3{
   width: fit-content;
   height: fit-content;
