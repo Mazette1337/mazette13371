@@ -170,7 +170,7 @@ path.two {
     animation: color_anim 1s infinite 0.4s;
 }
 
-/* SVG animations */
+/* SVG animations    */
 
 @keyframes color_anim {
     0% {
