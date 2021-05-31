@@ -8,7 +8,7 @@ body {
 .couverture {
 height: 25vh;
 width: 10vw;
-margin-bottom: 30px;
+margin-bottom: 10px;
 }
 
 .couvertureflip {
@@ -36,6 +36,7 @@ width: auto;
 {
 	text-align: center;
 width: 60vw;
+height: 100vh;
 
 }
 
@@ -77,8 +78,9 @@ body {
 
 footer {
     text-align: left;
-    padding-top:400px;
-    width: 50vw;
+    position: absolute;
+    bottom: 0;
+       width: 50vw;
 font-size: smaller;
 }
 
@@ -184,7 +186,7 @@ path.two {
 
 /* bouton télécharger */
 
-@media (max-width: 1200px) {
+@media (max-width: 1900px) {
 .couverture {
 width: 10vw;
 height: 10vh;
@@ -197,8 +199,12 @@ height: 10vh;
 .wrapper{
 width: fit-content;
 height: fit-content;
-
 }
+.wrapper3{
+  width: fit-content;
+  height: fit-content;
+  }
+
 
 }
 
